@@ -21,7 +21,7 @@ updates:
   - package-ecosystem: "nuget"
     registries: "*"
     directories:
-      - "/net/**/*"
+      - "/net/ConsoleApp2"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
