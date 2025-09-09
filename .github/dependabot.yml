@@ -20,7 +20,7 @@ updates:
       interval: "weekly"
   - package-ecosystem: "nuget"
     registries: "*"
-    directory: "/"
+    directory: "/net"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
