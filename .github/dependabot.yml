@@ -1,5 +1,10 @@
 ---
 version: 2
+registries:
+  nuget:
+    type: "nuget-feed"
+    url: "https://nuget.pkg.github.com/ayudasystems/index.json"
+    token: ${{secrets.NUGET_API_KEY}}
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -13,3 +18,9 @@ updates:
     directory: "/ruby"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "nuget"
+    registries: "*"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
