@@ -9,7 +9,7 @@
 
     <ItemGroup>
       <PackageReference Include="broadsign.monitor.metric.datadog" Version="5.0.0" />
-      <PackageReference Include="Confluent.Kafka" Version="2.9.0" />
+      <PackageReference Include="Confluent.Kafka" Version="2.11.1" />
     </ItemGroup>
 
 </Project>
